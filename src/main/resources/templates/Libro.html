@@ -3,16 +3,16 @@
 <head>
     <meta charset="UFT-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de libros</title>
+    <title>Formulario</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
     <div class="container">
         <h2 class="mt-5">Formulario de libro</h2>
-        <form action="/guardar-libro" method="post">
+        <form action="GuardarLibro" method="post">
             <div class="form-group">
-                <label for="titulo">Titulo</label>
-                <input type="text" class="form-control" id="titulo" name="titulo" required>
+                <label for="titulo">Titulo :</label> </br>
+                <input type="text"  name="titulo"/> </br>
             </div>
             <div class="form-group">
                 <label for="autor">Autor</label>
@@ -22,15 +22,15 @@
                 <label>Genero</label><br>
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="genero" id="generoFiccion" value="Ficcion">
-                    <label class="form-check-label" for="generoFiccion">Femenino</label>  
+                    <label class="form-check-label" for="generoFiccion">Ficcion</label>  
                 </div>
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="genero" id="generoNoFiccion" value="No Ficcion">
-                    <label class="form-check-label" for="generoNoFiccion">Masculino</label>
+                    <label class="form-check-label" for="generoNoFiccion">NoFiccion</label>
                 </div>
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="genero" id="generoFantasia" value="Fantasia">
-                    <label class="form-check-label" for="generoFantasia">No binario</label>
+                    <label class="form-check-label" for="generoFantasia">Fantasia</label>
                 </div>
             </div>
             <div class="form-group">
@@ -47,7 +47,7 @@
             </div>
             <div class="form-group">
                 <label for="descripcion">Descripcion</label>
-                <textarea class="form-control" id="descripcion" rows="3"></textarea>
+                <input type="text" class="form-control" id="descripcion" name="descripcion" required>
             </div>
             <div class="form-group">
                 <label for="imagen_portada">Imagen de portada</label>

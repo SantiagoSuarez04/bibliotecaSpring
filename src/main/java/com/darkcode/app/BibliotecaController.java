@@ -137,12 +137,7 @@ public ResponseEntity<HttpStatus> deleteAllLibros(){
         return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
     }
 }
-@GetMapping("/guardar-libro")
-    public String mostrarFormularioLibro() {
-        return "templates/Libro"; 
-    }
     
-
 }
 
 

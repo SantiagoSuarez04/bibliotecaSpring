@@ -9,49 +9,49 @@
 <body>
     <div class="container">
         <h2 class="mt-5">Formulario de Usuario</h2>
-        <form action="/guardar-usuario" method="post">
+        <form action="GuardarUsuario" method="post">
             <div class="form-group">
-                <label for="id">ID</label>
-                <input type="text" class="form-control" id="id" name="id" required>
+                <label for="idU">ID</label>
+                <input type="text" class="form-control" id="idU" name="idU" required>
             </div>
             <div class="form-group">
-                <label for="nombre">Nombre</label>
-                <input type="text" class="form-control" id="nombre" name="nombre" required>
+                <label for="nombreU">Nombre</label>
+                <input type="text" class="form-control" id="nombreU" name="nombreU" required>
             </div>
             <div class="form-group">
-                <label for="apellido">Apellido</label>
-                <input type="text" class="form-control" id="apellido" name="apellido" required>
+                <label for="apellidoU">Apellido</label>
+                <input type="text" class="form-control" id="apellidoU" name="apellidoU" required>
             </div>
             <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" name="email" required>
+                <label for="emailU">Email</label>
+                <input type="text" class="form-control" id="emailU" name="emailU" required>
             </div>
             <div class="form-group">
-                <label for="contraseña">Contraseña</label>
-                <input type="password" class="form-control" id="contraseña" name="contraseña" required>
+                <label for="contraseñaU">Contraseña</label>
+                <input type="password" class="form-control" id="contraseñaU" name="contraseñaU" required>
             </div>
             <div class="form-group">
                 <label>Rol</label><br>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="rol" id="rolAdmin" value="Admin" required>
+                    <input class="form-check-input" type="radio" name="rolU" id="rolAdmin" value="Admin" required>
                     <label class="form-check-label" for="rolAdmin">Admin</label>  
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="rol" id="rolUsuario" value="Usuario" required>
+                    <input class="form-check-input" type="radio" name="rolU" id="rolUsuario" value="Usuario" required>
                     <label class="form-check-label" for="rolUsuario">Usuario</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="rol" id="rolEditor" value="Editor" required>
+                    <input class="form-check-input" type="radio" name="rolU" id="rolEditor" value="Editor" required>
                     <label class="form-check-label" for="rolEditor">Editor</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="rol" id="rolVisitante" value="Visitante" required>
+                    <input class="form-check-input" type="radio" name="rolU" id="rolVisitante" value="Visitante" required>
                     <label class="form-check-label" for="rolVisitante">Visitante</label>
                 </div>
             </div>
             <div class="form-group">
-                <label for="fecha_registro">Fecha de Registro</label>
-                <input type="date" class="form-control" id="fecha_registro" name="fecha_registro" required>
+                <label for="fecha_registroU">Fecha de Registro</label>
+                <input type="date" class="form-control" id="fecha_registroU" name="fecha_registroU" required>
             </div>
             <button type="submit" class="btn btn-primary">Guardar</button>
         </form>
