@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de usuarios</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="mt-5">Formulario de Usuario</h2>
+        <form action="/guardar-usuario" method="post">
+            <div class="form-group">
+                <label for="id">ID</label>
+                <input type="text" class="form-control" id="id" name="id" required>
+            </div>
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" class="form-control" id="apellido" name="apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" class="form-control" id="contraseña" name="contraseña" required>
+            </div>
+            <div class="form-group">
+                <label>Rol</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="rol" id="rolAdmin" value="Admin" required>
+                    <label class="form-check-label" for="rolAdmin">Admin</label>  
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="rol" id="rolUsuario" value="Usuario" required>
+                    <label class="form-check-label" for="rolUsuario">Usuario</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="rol" id="rolEditor" value="Editor" required>
+                    <label class="form-check-label" for="rolEditor">Editor</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="rol" id="rolVisitante" value="Visitante" required>
+                    <label class="form-check-label" for="rolVisitante">Visitante</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="fecha_registro">Fecha de Registro</label>
+                <input type="date" class="form-control" id="fecha_registro" name="fecha_registro" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+        </form>
+    </div>
+</body>
+</html>>>
