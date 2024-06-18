@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de libros</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="mt-5">Formulario de libro</h2>
+        <form action="/guardar-libro" method="post">
+            <div class="form-group">
+                <label for="titulo">Titulo</label>
+                <input type="text" class="form-control" id="titulo" name="titulo" required>
+            </div>
+            <div class="form-group">
+                <label for="autor">Autor</label>
+                <input type="text" class="form-control" id="autor" name="autor" required>
+            </div>
+            <div class="form-group">
+                <label>Genero</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="genero" id="generoFiccion" value="Ficcion">
+                    <label class="form-check-label" for="generoFiccion">Femenino</label>  
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="genero" id="generoNoFiccion" value="No Ficcion">
+                    <label class="form-check-label" for="generoNoFiccion">Masculino</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="genero" id="generoFantasia" value="Fantasia">
+                    <label class="form-check-label" for="generoFantasia">No binario</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="fecha_publicacion">Fecha de publicacion</label>
+                <input type="date" class="form-control" id="fecha_publicacion" name="fecha_publicacion" required>
+            </div>
+            <div class="form-group">
+                <label for="isbn">ISBN</label>
+                <input type="text" class="form-control" id="isbn" name="isbn" required>
+            </div>
+            <div class="form-group">
+                <label for="cantidad_disponible">Cantidad Disponible</label>
+                <input type="number" class="form-control" id="cantidad_disponible" name="cantidad_disponible" required>
+            </div>
+            <div class="form-group">
+                <label for="descripcion">Descripcion</label>
+                <textarea class="form-control" id="descripcion" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="imagen_portada">Imagen de portada</label>
+                <input type="file" class="form-control-file" id="imagen_portada" name="imagen_portada" accept=".png, .jpg, .jpeg, .gif">
+                <input type="hidden" id="imagen_nombre" name="imagen_nombre">
+            </div>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+        </form>
+    </div>
+</body>
+</html>>>
