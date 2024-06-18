@@ -28,7 +28,7 @@ public class UsuarioController {
     private UsuarioService usuarioService;
      @Autowired
     BibliotecaRepository bibliotecaRepository;
-    // Endpoint para registrar un nuevo usuario
+
     @PostMapping("/registro")
     public ResponseEntity<Usuario> registrarUsuario(@RequestBody Usuario usuario) {
         try {
@@ -39,7 +39,6 @@ public class UsuarioController {
         }
     }
 
-    // Endpoint para editar el perfil de un usuario
     @PutMapping("/{id}")
     public ResponseEntity<Usuario> editarPerfil(@PathVariable("id") Long id, @RequestBody Usuario usuario) {
         try {
@@ -54,7 +53,6 @@ public class UsuarioController {
         }
     }
 
-    // Endpoint para añadir préstamo de libro (redireccionar a listar libros)
      @GetMapping("/librosPrestamo")
     public ResponseEntity<List<Biblioteca>> getAllLibros(@RequestParam(required = false)String nombre){
         try {
@@ -70,7 +68,6 @@ public class UsuarioController {
         }
     }
 
-    // Endpoint para obtener todos los usuarios (solo para propósitos de administración)
     @GetMapping("")
     public ResponseEntity<Iterable<Usuario>> listarUsuarios() {
         try {

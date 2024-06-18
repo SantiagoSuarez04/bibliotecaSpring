@@ -14,7 +14,7 @@ public class Usuario {
 
     private String nombre;
     private String email;
-    // Otros campos según tus necesidades
+    
     public Long getId() {
         return id;
     }

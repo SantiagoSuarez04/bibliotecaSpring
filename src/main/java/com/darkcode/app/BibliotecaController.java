@@ -20,7 +20,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.darkcode.app.domain.Biblioteca;
 import com.darkcode.app.repository.BibliotecaRepository;
 
-import ch.qos.logback.core.model.Model;
 
 
 
@@ -140,15 +139,9 @@ public ResponseEntity<HttpStatus> deleteAllLibros(){
 }
 @GetMapping("/guardar-libro")
     public String mostrarFormularioLibro() {
-        return "templates/Libro"; // Nombre del archivo HTML sin extensión ni ruta completa
+        return "templates/Libro"; 
     }
-    @GetMapping("/guardar-libro")
-    public String guardarlibro(Model model){
-        Biblioteca biblioteca = new Biblioteca();
-        model.addAttribute("tutorialAttributes", tutorial);
-        return "show_tutorial";
-
-    }
+    
 
 }
 
